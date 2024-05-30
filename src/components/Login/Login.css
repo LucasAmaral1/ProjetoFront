@@ -1,0 +1,58 @@
+/* Estilos para o container de login */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  /* Estilos para o título de login */
+  .login-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  /* Estilos para o formulário de login */
+  .login-container form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+  }
+  
+  /* Estilos para os campos do formulário de login */
+  .login-container form div {
+    margin-bottom: 15px;
+  }
+  
+  /* Estilos para os labels do formulário de login */
+  .login-container form label {
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  /* Estilos para os inputs do formulário de login */
+  .login-container form input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  /* Estilos para o botão do formulário de login */
+  .login-container form button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .login-container form button:hover {
+    background-color: #45a049;
+  }
