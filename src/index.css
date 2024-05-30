@@ -1,3 +1,12 @@
+/* index.css */
+
+/* Estilos para a imagem do logo */
+.App-logo {
+  width: 800px; 
+  height: 350px; 
+}
+
+/* Estilos para o container */
 .container {
   max-width: 800px;
   margin: 0 auto;
@@ -7,11 +16,13 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Estilos para o título principal */
 h1 {
   text-align: center;
   margin-bottom: 20px;
 }
 
+/* Estilos para a seção superior */
 .top {
   display: flex;
   justify-content: space-between;
@@ -19,11 +30,13 @@ h1 {
   margin-bottom: 20px;
 }
 
+/* Estilos para o container de input */
 .input-container {
   flex-grow: 1;
   margin-right: 10px;
 }
 
+/* Estilos para o input de texto */
 input[type="text"] {
   width: 100%;
   padding: 10px;
@@ -31,6 +44,7 @@ input[type="text"] {
   border-radius: 5px;
 }
 
+/* Estilos para o botão de adicionar/atualizar */
 .add {
   background-color: #4caf50;
   color: white;
@@ -43,6 +57,7 @@ input[type="text"] {
   background-color: #45a049;
 }
 
+/* Estilos para a lista de tarefas */
 .list {
   background-color: #fff;
   border: 1px solid #ccc;
@@ -50,6 +65,7 @@ input[type="text"] {
   padding: 10px;
 }
 
+/* Estilos para cada item de tarefa */
 .todo-item {
   display: flex;
   align-items: center;
@@ -60,11 +76,13 @@ input[type="text"] {
   border-radius: 5px;
 }
 
+/* Estilos para o texto da tarefa */
 .todo-text {
   flex-grow: 1;
   margin-right: 10px;
 }
 
+/* Estilos para as ações (botões) */
 .actions {
   display: flex;
   align-items: center;
@@ -72,4 +90,63 @@ input[type="text"] {
 
 .actions button {
   margin-right: 5px;
+}
+
+/* Estilos para o container de login */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+}
+
+/* Estilos para o título de login */
+.login-container h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Estilos para o formulário de login */
+.login-container form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+/* Estilos para os campos do formulário de login */
+.login-container form div {
+  margin-bottom: 15px;
+}
+
+/* Estilos para os labels do formulário de login */
+.login-container form label {
+  margin-bottom: 5px;
+  color: #333;
+}
+
+/* Estilos para os inputs do formulário de login */
+.login-container form input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+/* Estilos para o botão do formulário de login */
+.login-container form button {
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.login-container form button:hover {
+  background-color: #45a049;
 }
