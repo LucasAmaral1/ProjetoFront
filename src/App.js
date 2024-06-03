@@ -4,6 +4,9 @@ import Login from "./components/Login"; // Novo componente de login
 import { addToDo, deleteToDo, getAllToDo, updateToDo } from "./utils/HandleApi";
 import "./index.css";
 import logo from './images/logo2.jpg';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Cadastro from './components/Cadastro/Cadastro';
+
 
 function App() {
   const [toDo, setToDo] = useState([]);
@@ -67,10 +70,16 @@ function App() {
           </div>
         </div>
       ) : (
-        <Login onLogin={handleLogin} />
+        <Router>
+      <Routes>
+        <Route path="/" element={<Login onLogin={handleLogin} />} />
+        <Route path="/Cadastro" element={<Cadastro />} />
+      </Routes>
+    </Router>
       )}
     </div>
   );
+  
 }
 
 export default App;

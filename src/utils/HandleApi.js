@@ -53,4 +53,9 @@ const deleteToDo = (_id, setToDo) => {
     });
 };
 
+export const registerUser = async (userData) => {
+  // implementação
+  console.log('Registering user', userData); // para confirmar que a função está sendo chamada
+};
+
 export { getAllToDo, addToDo, updateToDo, deleteToDo };

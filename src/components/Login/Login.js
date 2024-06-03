@@ -1,13 +1,18 @@
 import React, { useState } from 'react';
 import logo from '../../images/newLogo.png'; 
+import { useNavigate } from 'react-router-dom';
 
 const Login = ({ onLogin }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const navigate = useNavigate();
 
   const handleSubmit = (event) => {
     event.preventDefault();
     onLogin();
+    {
+      navigate('/dashboard');
+    }
   };
 
   return (
